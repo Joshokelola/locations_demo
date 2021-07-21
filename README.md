@@ -1,6 +1,6 @@
 # Locations App
 
-A new Flutter project.
+Still in Development
 
 ## Description
 
