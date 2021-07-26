@@ -1,3 +1,5 @@
+import 'package:locations/pages/Hotel_carousel.dart';
+
 import 'Location_carousel.dart';
 import 'models/location_model.dart';
 import 'package:flutter/material.dart';
@@ -49,7 +51,9 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             const SizedBox(height: 20.0),
-            LocationCarousel()
+            LocationCarousel(),
+            const SizedBox(height: 20.0),
+            HotelCarousel()
           ],
         ),
       ),
