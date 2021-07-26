@@ -36,6 +36,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  int _currentTab = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,6 +57,36 @@ class _MyHomePageState extends State<MyHomePage> {
             HotelCarousel()
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _currentTab,
+        onTap: (int value) {
+          setState(() {
+            _currentTab = value;
+          });
+        },
+        items: [
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home_outlined,
+                size: 30.0,
+              ),
+              // ignore: deprecated_member_use
+              title: SizedBox.shrink()),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.local_pizza_outlined,
+                size: 30.0,
+              ),
+              // ignore: deprecated_member_use
+              title: SizedBox.shrink()),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.trending_up_outlined,
+                size: 30.0,
+              ),
+              title: SizedBox.shrink())
+        ],
       ),
     );
   }
