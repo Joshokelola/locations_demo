@@ -3,7 +3,7 @@ import 'package:locations/pages/Hotel_carousel.dart';
 import 'Location_carousel.dart';
 import 'models/location_model.dart';
 import 'package:flutter/material.dart';
-import 'pages/location_detail.dart';
+
 
 void main() {
   runApp(LocationApp());
@@ -85,6 +85,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Icons.trending_up_outlined,
                 size: 30.0,
               ),
+              // ignore: deprecated_member_use
               title: SizedBox.shrink())
         ],
       ),
